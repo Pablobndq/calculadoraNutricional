@@ -1,0 +1,362 @@
+/*
+* ----------------------General---------------------
+*/
+
+/* .imc-container{
+    background-image: url('../img/logopbd.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+} */
+
+.calc .field{
+    min-width: 270px;
+    margin-bottom: 10px;
+    padding: 15px 25px 25px 25px;
+    /* box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);  */
+}
+
+.agv-btn-submit{
+    height: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #ffffff !important;
+    border: 1px solid #337736 !important;
+    border-radius: 0% !important;
+    color: #337736 !important;
+    outline: none;
+}
+
+.agv-btn-submit:hover{
+    color: #FFF !important;
+    background-color: #337736 !important;
+    outline: none;
+}
+
+.hidden{
+    display: none;
+    transition: 1s;
+    opacity: 0;
+}
+
+.agv-img-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agv-img-logo img{
+    width: 50px;
+}
+
+/*
+* ----------------------Calculadora IMC---------------------
+*/
+
+.imc-container h1, p{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.imc-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imc-form-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imc-form .field{
+    width: 30% !important;
+}
+
+.imc-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.imc-result h3{
+    height: 100px;
+    text-align: center;
+    display: block;
+}
+
+.imc-chart{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.chart-stadio{
+    width: 14%;
+    height: 20px;
+    margin: 5px;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.resultado{
+    height: 100px;
+}
+
+.resultadoStr{
+    height: 50px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.bajopeso{
+    background-color: #73A6B7;
+}
+
+.normopeso{
+    background-color: #9dd480;
+}
+
+.sobrepeso{
+    background-color: #C9BE4D;
+}
+
+.obesidadI{
+    background-color: #C88E34;
+}
+
+.obesidadII{
+    background-color: #BA7645;
+}
+
+.obesidadIII{
+    background-color: #BA5945;
+}
+
+.obesidadIV{
+    background-color: #973333;
+}
+
+.grow{
+    height: 85px;
+    transition: 1s;
+}
+
+
+/*
+* --------------------Calculadora Avanzada----------------------
+*/
+
+.resultAdv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.result-title{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff54;
+    text-decoration: none;
+    color: #3f4e3d;
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 90%;
+    background-color: #7a9c77;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    top: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.result-title:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.resultCard{
+    width: 32%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.result-title:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg,#73A6B7,#c7d8de);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg,#9dd480,#cbdec0);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg,#C9BE4D,#d7d2a8);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg,#C88E34,#dac6a8);
+}
+
+.bg-c-purple {
+    background: linear-gradient(45deg,#ba45ae,#c6a4c1);
+}
+
+.bg-c-red {
+    background: linear-gradient(45deg,#973333,#b98989);
+}
+
+.resultData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    opacity: 0;
+    transition: 2s;
+}
+
+.resultData h5{
+    transition: 0.5s;
+}
+
+.show{
+    opacity: 1;
+    transition: 2s;
+}
+
+.field input, select{
+    
+    background-color: #7a9c7740;
+    border: none !important;
+    border-bottom: 2px solid #fff !important;
+    border-radius: 0px !important;
+    margin-top: 5px !important;
+    outline: none;
+
+}
+
+.field input:focus, select:focus{
+    
+    background-color: rgba(122, 156, 119, 0.3);
+    border-bottom: 2px solid #7a9c77 !important;
+    transition: 0.5s;
+
+}
+
+.field input:hover, select:hover{
+    
+    background-color: rgba(122, 156, 119, 0.3);
+    border-bottom: 2px solid #7a9c77 !important;
+    transition: 0.5s;
+
+}
+
+.agv-method-explanation{
+    padding: 10px;
+}
+
+.agv-method-explanation p{
+    text-align: justify;
+}
+
+/* @media screen {
+    .imc-container {
+        background: none; 
+    }
+} */
+
+@media print{
+    body{
+        background-color: #337736;
+    }
+}
+
+@media (max-width: 1000px) {
+    .resultCard{
+        width: 48%;
+        
+    }
+
+}
+
+@media (max-width: 600px) {
+    .resultCard{
+        width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .imc-form-cont{
+        padding: none;
+        width: 95%;
+    }
+    .field {
+    
+        width: 95% !important;
+    
+    }
+    .chart-stadio{
+        font-size: 0px;
+    }
+    .grow{
+        height: 75px;
+    }
+    .calc .field{
+        width: 90% !important;
+        margin-bottom: 10px;
+        padding: 5px 10px 10px 10px;
+    }
+}
+
+/*
+* --------------------Calculadora Cineantropometría----------------------
+*/
+
+.agv-chart{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+
+
+
