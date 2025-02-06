@@ -132,7 +132,7 @@
         </div>
     </div>
     <br><br>
-    <!-- <div style="display: flex; justify-content: center">
+    <div style="display: flex; justify-content: center">
         <button id="adv-print-btn" onclick="document_calc_print()">Imprimir</button>
-    </div> -->
+    </div>
     
